@@ -16,8 +16,8 @@ function AddFeedback() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    //await axios.post("http://localhost:5000/api/feedback", form);
-await axios.post("https://feedback-exitexam.onrender.com/api/feedback", form);
+    await axios.post("http://localhost:5000/api/feedback", form);
+// await axios.post("https://feedback-exitexam.onrender.com/api/feedback", form);
     alert("Feedback added!");
     setForm({
       courseId: "",
